@@ -16,7 +16,7 @@ body {
   font-family: SBfont;
 }
 
-.title{
+h1 {
   font-family: SBfont;
   font-weight: bold;
   font-size: 80px;
@@ -29,6 +29,7 @@ body {
   grid-template-columns: auto auto auto;
   padding: 10px;
   padding-top: 200px;
+  column-gap: 80px;
 }
 
 .grid .thumbnail {
@@ -39,7 +40,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-
+  border-radius: 25px;
 }
 .grid .recipe {
   text-align: center;
@@ -48,6 +49,11 @@ body {
   transition: transform .3s;
   -webkit-text-stroke: 1.6px darkblue;
   -webkit-text-fill-color: yellow;
+  background-color:aliceblue;
+  border-radius: 20px;
+  border-color:darkred;
+  border-width: 2px;
+  border-style:groove;
 }
 .recipe:hover {
   transform: scale(1.1);
@@ -63,14 +69,14 @@ body {
   -webkit-text-fill-color: yellow;
 }
 
-/* #kelp_fries {
-  padding: auto;
+/* FOR RECIPE PAGE SPECIFIC CHANGES */
+.recipe-page-body {
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 25px;
+  border-style: ridge;
+  border-color: darkred;
 }
-
-#coral_bits {
-  padding: auto;
+.recipe-card {
+  border-radius: 30px;
 }
-
-#krabby_patty {
-  padding: auto;
-} */
