@@ -1,0 +1,76 @@
+/* Styles for "Galley Grub" recipe page, Odin Project exercise */
+
+@font-face {
+  font-family: SBfont;
+  src: url("Some Time Later.otf");
+}
+
+body {
+    background-image: url("images/krusty-krab.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgb(95, 172, 146);
+}
+
+* {
+  font-family: SBfont;
+}
+
+.title{
+  font-family: SBfont;
+  font-weight: bold;
+  font-size: 80px;
+  -webkit-text-stroke: 3px darkblue;
+  -webkit-text-fill-color: darkred;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  padding-top: 200px;
+}
+
+.grid .thumbnail {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+.grid .recipe {
+  text-align: center;
+  font-size: 35px;
+  padding: 20px;
+  transition: transform .3s;
+  -webkit-text-stroke: 1.6px darkblue;
+  -webkit-text-fill-color: yellow;
+}
+.recipe:hover {
+  transform: scale(1.1);
+}
+
+.credit {
+  font-size: 20px;
+  text-align: center;
+  text-emphasis: 700;
+  position: relative;
+  padding-top: 20px;
+  -webkit-text-stroke: 1px darkblue;
+  -webkit-text-fill-color: yellow;
+}
+
+/* #kelp_fries {
+  padding: auto;
+}
+
+#coral_bits {
+  padding: auto;
+}
+
+#krabby_patty {
+  padding: auto;
+} */
